@@ -12,6 +12,7 @@ body
   flex-direction: column;
   margin: 0;
   flex-shrink: 1;
+  padding: 0;
 }
 
 header{
@@ -21,6 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
     margin:0;
     background-color: black;
     align-items: center;
@@ -112,13 +114,13 @@ main{
     align-items: center;
     margin: 0 auto;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 40px;
+    /* flex-wrap: wrap; */
+    /* padding-left: 40px; */
 
 }
 
 .locationtitle{
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     margin-bottom: 15px;
@@ -126,22 +128,33 @@ main{
 
 .locationtitle h2{
     margin: 0 auto;
+    padding: 0;
 }
 
 .addressconatiner{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     margin: 0;
-     flex-shrink: 1;
+    flex-shrink: 1;
+    width:100%;
+    padding: 0;
     
 }
 .address{
     background-color: black;
     opacity: 1 ;
-    width: 300px;
-    margin-right: 40px;
+    max-width: 30%;
+    /* margin-right: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 
+}
+
+.address h3, .address h4{
+    margin: 5px auto;
+    padding: 20px;
 }
 
 
